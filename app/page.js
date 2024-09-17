@@ -75,7 +75,7 @@ export default function Home() {
               your unique needs.
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-800'>
+          <div className='text-5xl flex justify-center gap-10 py-3 text-gray-800 md:gap-20 mb-8'>
             <a
               href='https://twitter.com/aliisjustfine'
               target='blank'
@@ -108,7 +108,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className=' h3mktg text-3xl py-1'> Services I offer</h3>
+            <h3 className='h3mktg text-3xl py-1'> Services I offer</h3>
             {/* <p className='text-md py-2 leading-8 text-gray-800'>
               Since the begining of my journey as a freelance developer, I've
               done remote work for
@@ -122,7 +122,7 @@ export default function Home() {
               teaching.
             </p> */}
           </div>
-          <div className='lg:flex gap-10'>
+          <div className='lg:flex gap-10 pt-0'>
             <div className=' card text-center shadow-lg p-10 rounded-xl my-10 bg-slate-400'>
               <div className='flex justify-center'>
                 <Image src={frontend} width={100} height={100} />
