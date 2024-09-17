@@ -61,7 +61,7 @@ export default function Home() {
             />
           </div>
           <div className='text-center p-10'>
-            <h2 className='text-5xl text-amber-950 py-2 playfair_display font-medium md:text-6xl '>
+            <h2 className='text-4xl text-amber-950 py-2 playfair_display md:text-5xl max-w-lg mx-auto '>
               Mohammad Ali
             </h2>
             <h3 className='text-2xl py-2 md:text-3xl'>
