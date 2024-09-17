@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import deved from '../public/IMG_1127.jpg'
+import deved from '../public/IMG_1126.jpg'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
   AiFillTwitterCircle,
