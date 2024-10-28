@@ -18,6 +18,7 @@ import web4 from '../public/web4.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
 import gym from '../public/gym1.png'
+import tabs from '../public/image1.png'
 import education from '../public/education1.png'
 import login from '../public/loginpage.png'
 // import web6 from '../public/web6.png'
@@ -286,6 +287,15 @@ export default function Home() {
             <div className='basis-1/3 flex-1'>
               <Image
                 src={web6}
+                className='rounded-lg object-cover'
+                width={'100%'}
+                height={'100%'}
+                layout='responsive'
+              />
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image
+                src={tabs}
                 className='rounded-lg object-cover'
                 width={'100%'}
                 height={'100%'}
