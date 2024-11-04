@@ -214,6 +214,8 @@ export default function Home() {
               <ul className='list-disc list-inside'>
                 <li>Figma</li>
                 <li>Adobe Photoshop</li>
+                <li>Wordpress</li>
+                <li>Web Redesign</li>
               </ul>
             </div>
             <div className='shadow-lg p-10 rounded-xl my-10'>
