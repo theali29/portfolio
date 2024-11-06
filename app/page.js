@@ -138,7 +138,12 @@ export default function Home() {
           <div className='lg:flex gap-10 pt-0'>
             <div className=' card text-center shadow-lg p-10 rounded-xl my-10 bg-slate-400'>
               <div className='flex justify-center'>
-                <Image src={frontend} width={100} height={100} />
+                <Image
+                  src={frontend}
+                  width={100}
+                  height={100}
+                  alt='front-end'
+                />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Front-End Development
@@ -150,7 +155,12 @@ export default function Home() {
             </div>
             <div className='card text-center shadow-lg p-10 rounded-xl my-10 bg-red-400'>
               <div className='flex justify-center'>
-                <Image src={mobileapp} width={100} height={100} />
+                <Image
+                  src={mobileapp}
+                  width={100}
+                  height={100}
+                  alt='mobileapp'
+                />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Mobile App Development
@@ -162,7 +172,7 @@ export default function Home() {
             </div>
             <div className='card text-center shadow-lg p-10 rounded-xl my-10 bg-emerald-400'>
               <div className='flex justify-center'>
-                <Image src={backend} width={100} height={100} />
+                <Image src={backend} width={100} height={100} alt='backend' />
               </div>
               <h3 className='text-lg font-medium pt-8 pb-2'>
                 Back-End Development
@@ -261,6 +271,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 1'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -270,6 +281,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 2'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -279,6 +291,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 3'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -288,6 +301,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 4'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -297,6 +311,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 5'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -306,6 +321,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 6'
               />
             </div>
             <div className='basis-1/3 flex-1'>
@@ -315,6 +331,7 @@ export default function Home() {
                 width={'100%'}
                 height={'100%'}
                 layout='responsive'
+                alt='Project 7'
               />
             </div>
           </div>
@@ -327,7 +344,7 @@ export default function Home() {
             Get in Touch
           </h2>
           <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl'>
-            Let's talk about everything!
+            Let&apos;s talk about everything!
           </p>
           <ContactForm />
         </section>
