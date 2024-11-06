@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import deved from '../public/IMG_1126.jpg'
+import ContactForm from '@/components/contactform'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
   AiFillTwitterCircle,
@@ -35,23 +36,34 @@ export default function Home() {
     // className={darkMode ? 'dark' : ''}
     <div>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 '>
-        <section className=' min-h-screen'>
+        <section id='home' className=' min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl playfair_display underline'>Mohammad A. </h1>
-            {/* <ul className='flex items-center'>
+            <ul className='flex items-center gap-5 md:gap-10 '>
               {/* <li>
                 <DarkModeToggle onToggle={handleDarkModeToggle} />
               </li> */}
-            {/* <li>
-                <a
+              <li className=''>
+                {/* <a
                   className='card big-gradient-to-r bg-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
                   href='/Mohammad Ali - ASE.pdf'
                   download='Mohammad Ali - ASE.pdf'
                 >
                   Resume
-                </a>
+                </a> */}
+                <a href='/#home'>Home</a>
               </li>
-            </ul> */}
+              <li className=''>
+                <a href='/#services'>Services</a>
+              </li>
+
+              <li className=''>
+                <a href='/#projects'>Projects</a>
+              </li>
+              <li className=''>
+                <a href='/#contact'>Contact</a>
+              </li>
+            </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
             <Image
@@ -107,7 +119,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <section>
+        <section id='services'>
           <div>
             <h3 className='h3mktg text-3xl py-1'> Services I offer</h3>
             {/* <p className='text-md py-2 leading-8 text-gray-800'>
@@ -230,7 +242,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id='projects'>
           <div>
             <h3 className=' h3mktg text-3xl py-1'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-800 text-xl font-serif'>
@@ -306,6 +318,18 @@ export default function Home() {
               />
             </div>
           </div>
+        </section>
+        <section
+          id='contact'
+          className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'
+        >
+          <h2 className='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'>
+            Get in Touch
+          </h2>
+          <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl'>
+            Let's talk about everything!
+          </p>
+          <ContactForm />
         </section>
       </main>
     </div>
