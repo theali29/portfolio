@@ -37,34 +37,40 @@ export default function Home() {
     <div>
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 '>
         <section id='home' className=' min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl playfair_display underline'>Mohammad A. </h1>
-            <ul className='flex items-center gap-5 md:gap-10 '>
-              {/* <li>
-                <DarkModeToggle onToggle={handleDarkModeToggle} />
-              </li> */}
-              <li className=''>
-                {/* <a
-                  className='card big-gradient-to-r bg-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'
-                  href='/Mohammad Ali - ASE.pdf'
-                  download='Mohammad Ali - ASE.pdf'
+          <nav className='py-6 mb-8 flex justify-between items-center'>
+            <h1 className='text-xs sm:text-base lg:text-xl playfair_display underline'>
+              Mohammad A.
+            </h1>
+            <ul className='flex items-center gap-2 sm:gap-4 md:gap-6 lg:gap-10'>
+              <li>
+                <a href='/#home' className='hover:text-amber-950 transition'>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/#services'
+                  className='hover:text-amber-950 transition'
                 >
-                  Resume
-                </a> */}
-                <a href='/#home'>Home</a>
+                  Services
+                </a>
               </li>
-              <li className=''>
-                <a href='/#services'>Services</a>
+              <li>
+                <a
+                  href='/#projects'
+                  className='hover:text-amber-950 transition'
+                >
+                  Projects
+                </a>
               </li>
-
-              <li className=''>
-                <a href='/#projects'>Projects</a>
-              </li>
-              <li className=''>
-                <a href='/#contact'>Contact</a>
+              <li>
+                <a href='/#contact' className='hover:text-amber-950 transition'>
+                  Contact
+                </a>
               </li>
             </ul>
           </nav>
+
           <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
             <Image
               src={deved}
@@ -125,8 +131,8 @@ export default function Home() {
             {/* <p className='text-md py-2 leading-8 text-gray-800'>
               Since the begining of my journey as a freelance developer, I've
               done remote work for
-              <span className='text-teal-500'> agencies </span>
-              consulted for <span className='text-teal-500'> startups </span>
+              <span className='text-amber-950'> agencies </span>
+              consulted for <span className='text-amber-950'> startups </span>
               andcolaborated with talented people to create for both business
               and consumer use.
             </p>
