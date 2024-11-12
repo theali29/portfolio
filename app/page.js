@@ -41,7 +41,7 @@ export default function Home() {
             <h1 className='hidden sm:visible text-xs sm:text-base lg:text-xl playfair_display underline'>
               Mohammad A.
             </h1>
-            <ul className='flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-10'>
+            <ul className='flex items-center gap-4 sm:gap-4 md:gap-6 lg:gap-10'>
               <li>
                 <a href='/#home' className='hover:text-amber-950 transition'>
                   Home
