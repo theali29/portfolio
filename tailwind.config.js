@@ -11,6 +11,10 @@ module.exports = {
       fontFamily: {
         burtons: 'burtons',
       },
+
+      screens: {
+        xxs: '430px', // Customize your screen size breakpoint
+      },
     },
   },
   plugins: [],
