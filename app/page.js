@@ -38,10 +38,10 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 '>
         <section id='home' className=' min-h-screen'>
           <nav className='py-6 mb-8 flex justify-between items-center'>
-            <h1 className='text-xs sm:text-base lg:text-xl playfair_display underline'>
+            <h1 className='hidden sm:visible text-xs sm:text-base lg:text-xl playfair_display underline'>
               Mohammad A.
             </h1>
-            <ul className='flex items-center gap-1 sm:gap-4 md:gap-6 lg:gap-10'>
+            <ul className='flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-10'>
               <li>
                 <a href='/#home' className='hover:text-amber-950 transition'>
                   Home
