@@ -202,6 +202,7 @@ export default function Home() {
               <ul className='list-disc list-inside'>
                 <li>ReactJS</li>
                 <li>NextJS</li>
+                <li>NextJS</li>
                 <li>JavaScript</li>
                 <li>HTML | CSS</li>
                 <li>Flutter</li>
