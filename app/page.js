@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import deved from '../public/IMG_1126.jpg'
+import detector from '../public/detector.png'
 import ContactForm from '@/components/contactform'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import {
@@ -274,159 +275,266 @@ export default function Home() {
                 have made along the way!
               </p>
             </div>
-            <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-              <div className='flex-col  shadow-lg shcadow-amber-950 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-x-6 py-10 lg:flex-row lg:flex-wrap'>
+              <div className='shadow-lg shadow-amber-950 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={tabs}
                   className='rounded-lg object-cover'
                   width={'357px'}
                   height={'190px'}
                   layout='responsive'
-                  alt='Project 1'
+                  alt='Tabsform'
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Tabsform
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
                     It is a next-generation form-building SaaS platform designed
                     to revolutionize how forms and surveys are created and
                     experienced. Tabsform offers features like real-time
                     input-driven adaptation, AI-based personalization,
                     gamification, and deep analytics integration.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://tabsform.netlify.app'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className='flex-col shadow-lg shadow-amber-950 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+              <div className='flex-col shadow-lg shadow-amber-800 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
+                <Image
+                  src={detector}
+                  className='rounded-lg object-cover'
+                  width={'100%'}
+                  height={'100%'}
+                  layout='responsive'
+                  alt='Lie Detector'
+                />
+                <div className='py-8 px-6'>
+                  <h3 className='mt-0 text-3xl playfair_display font-medium'>
+                    Lie Detector
+                  </h3>
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
+                    An advanced software system to enhance deception detection
+                    by combining facial analysis with physiological signal
+                    processing. Utilizing advanced machine learning algorithms,
+                    it analyzes real-time video data to detect subtle behavioral
+                    and physiological cues that indicate deceptive behavior.
+                  </div>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://github.com/theali29/Lie-Detector'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Application
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className='flex-col shadow-lg shadow-amber-950 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={gym}
                   className='rounded-lg object-cover'
                   width={'357px'}
                   height={'190px'}
                   layout='responsive'
-                  alt='Project 2'
+                  alt='Ali Fitness'
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Ali Fitness
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
-                    It is a next-generation form-building SaaS platform designed
-                    to revolutionize how forms and surveys are created and
-                    experienced. Tabsform offers features like real-time
-                    input-driven adaptation, AI-based personalization,
-                    gamification, and deep analytics integration.
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
+                    A dynamic and responsive fitness platform designed to
+                    enhance the user experience. It features visually appealing
+                    layouts, recommended meal plans, personalized fitness
+                    programs, and engaging workout sessions, all aimed at
+                    inspiring and guiding users on their fitness journey.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://fitness-landing-page1.netlify.app/'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className='flex-col  shadow-lg shadow-amber-950 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+              <div className='flex-col  shadow-lg shadow-amber-950 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={education}
                   className='rounded-lg object-cover'
                   width={'100%'}
                   height={'100%'}
                   layout='responsive'
-                  alt='Project 3'
+                  alt='Education Hub'
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Education Hub
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
-                    It is a next-generation form-building SaaS platform designed
-                    to revolutionize how forms and surveys are created and
-                    experienced. Tabsform offers features like real-time
-                    input-driven adaptation, AI-based personalization,
-                    gamification, and deep analytics integration.
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
+                    A comprehensive platform designed for learners and educators
+                    to access curated resources, interactive tools, and
+                    personalized learning paths. Built to support educational
+                    institutions and self-learners alike.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
-                  </div>
-                </div>
-              </div>
-              <div className='flex-col shadow-lg shadow-amber-800 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
-                <Image
-                  src={web4}
-                  className='rounded-lg object-cover'
-                  width={'100%'}
-                  height={'100%'}
-                  layout='responsive'
-                  alt='Project 4'
-                />
-                <div className='py-8 px-6'>
-                  <h3 className='mt-0 text-3xl playfair_display font-medium'>
-                    Gardy
-                  </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
-                    It is a next-generation form-building SaaS platform designed
-                    to revolutionize how forms and surveys are created and
-                    experienced. Tabsform offers features like real-time
-                    input-driven adaptation, AI-based personalization,
-                    gamification, and deep analytics integration.
-                  </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://tabsform.netlify.app'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className='flex-col  shadow-lg shadow-amber-800 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+              <div className='flex-col shadow-lg shadow-amber-800 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={web5}
                   className='rounded-lg object-cover'
                   width={'100%'}
                   height={'100%'}
                   layout='responsive'
-                  alt='Project 5'
+                  alt='Aimm'
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Aimm
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
                     It is a next-generation form-building SaaS platform designed
                     to revolutionize how forms and surveys are created and
                     experienced. Tabsform offers features like real-time
                     input-driven adaptation, AI-based personalization,
                     gamification, and deep analytics integration.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://tabsform.netlify.app'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className='flex-col flex shadow-lg shadow-amber-800 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+              <div className='flex-col shadow-lg shadow-amber-800 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={web6}
                   className='rounded-lg object-cover'
                   width={'100%'}
                   height={'100%'}
                   layout='responsive'
-                  alt='Project 6'
+                  alt='Nunito'
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Nunito
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
+                  <div className='my-3 text-base leading-[1.2] tracking-lighter'>
                     It is a next-generation form-building SaaS platform designed
                     to revolutionize how forms and surveys are created and
                     experienced. Tabsform offers features like real-time
                     input-driven adaptation, AI-based personalization,
                     gamification, and deep analytics integration.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://tabsform.netlify.app'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
               </div>
-              ,
-              <div className='flex-col shadow-lg shadow-amber-800 p-10 rounded-xl my-10 basis-0.5/3 flex-1 w-full h-fit'>
+
+              {/* <div className='flex-col shadow-lg shadow-amber-800 rounded-xl mt-0 mb-8 ml-0 mr-4 mx-0 basis-1/3 flex-1 w-full h-fit'>
                 <Image
                   src={tabs}
                   className='rounded-lg object-cover'
@@ -439,18 +547,36 @@ export default function Home() {
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
                     Tabsform
                   </h3>
-                  <div className='my-2 text-lg leading-[1.2] tracking-lighter'>
+                  <div className='my-2 text-base leading-[1.2] tracking-lighter'>
                     It is a next-generation form-building SaaS platform designed
                     to revolutionize how forms and surveys are created and
                     experienced. Tabsform offers features like real-time
                     input-driven adaptation, AI-based personalization,
                     gamification, and deep analytics integration.
                   </div>
-                  <div>
-                    <a href='https://tabsform.netlify.app'></a>
+                  <div className='mt-auto self-end'>
+                    <a
+                      href='https://tabsform.netlify.app'
+                      className='items-center flex p-1 w-fit font-bold text-amber-950'
+                    >
+                      <svg
+                        stroke='currentColor'
+                        fill='currentColor'
+                        stroke-width='0'
+                        viewBox='0 0 16 16'
+                        height='20'
+                        width='20'
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='mr-1s'
+                      >
+                        <path d='M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z'></path>
+                        <path d='M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z'></path>
+                      </svg>
+                      Website
+                    </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
           <section
