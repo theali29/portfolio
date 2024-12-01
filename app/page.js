@@ -41,7 +41,7 @@ export default function Home() {
           <section id='home' className=' min-h-screen'>
             <nav className='py-6 mb-8 flex justify-between items-center'>
               <h1 className='xxs:text-xs text-[8px] text-xs sm:text-base lg:text-xl playfair_display underline'>
-                Mohammad A.
+                Mohammad Ali
               </h1>
               <ul className='flex xxs:text-xs text-[8px] text-xs sm:text-base items-center gap-2 sm:gap-4 md:gap-6 lg:gap-10'>
                 <li>
@@ -75,29 +75,30 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-
-            <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
-              <Image
-                src={deved}
-                layout='fill'
-                objectFit='cover'
-                alt='Profile Picture'
-              />
-            </div>
-            <div className='text-center p-10'>
-              <h2 className='text-4xl text-amber-950 py-2 playfair_display md:text-5xl max-w-lg mx-auto '>
-                Mohammad Ali
-              </h2>
-              <h3 className='text-2xl py-2 md:text-3xl'>
-                Full Stack Developer and Designer
-              </h3>
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
-                Hello! I am a passionate and driven full-stack developer ready
-                to bring innovative solutions to your startup or business. With
-                a solid foundation in both web and mobile development, I am
-                committed to delivering high-quality, tailored solutions that
-                meet your unique needs.
-              </p>
+            <div className='flex items-center'>
+              <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
+                <Image
+                  src={deved}
+                  layout='fill'
+                  objectFit='cover'
+                  alt='Profile Picture'
+                />
+              </div>
+              <div className='text-center p-10'>
+                <h2 className='text-4xl text-amber-950 py-2  md:text-5xl max-w-lg mx-auto font-satoshi font-bold'>
+                  Mohammad Ali
+                </h2>
+                <h3 className='text-2xl py-2 md:text-3xl'>
+                  Full Stack Developer and Designer
+                </h3>
+                <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+                  Hello! I am a passionate and driven full-stack developer ready
+                  to bring innovative solutions to your startup or business.
+                  With a solid foundation in both web and mobile development, I
+                  am committed to delivering high-quality, tailored solutions
+                  that meet your unique needs.
+                </p>
+              </div>
             </div>
             <div className='text-5xl flex justify-center gap-10 py-3 text-gray-800 md:gap-20 mb-8'>
               <a
@@ -280,10 +281,12 @@ export default function Home() {
                 <Image
                   src={tabs}
                   className='rounded-lg object-cover'
-                  width={'357px'}
-                  height={'190px'}
                   layout='responsive'
                   alt='Tabsform'
+                  style={{
+                    width: '384px !important',
+                    height: '192px !important',
+                  }}
                 />
                 <div className='py-8 px-6'>
                   <h3 className='mt-0 text-3xl playfair_display font-medium'>
@@ -323,8 +326,10 @@ export default function Home() {
                 <Image
                   src={detector}
                   className='rounded-lg object-cover'
-                  width={'100%'}
-                  height={'100%'}
+                  style={{
+                    width: '384px !important',
+                    height: '192px !important',
+                  }}
                   layout='responsive'
                   alt='Lie Detector'
                 />
@@ -366,8 +371,10 @@ export default function Home() {
                 <Image
                   src={gym}
                   className='rounded-lg object-cover'
-                  width={'357px'}
-                  height={'190px'}
+                  style={{
+                    width: '384px !important',
+                    height: '192px !important',
+                  }}
                   layout='responsive'
                   alt='Ali Fitness'
                 />
@@ -409,8 +416,10 @@ export default function Home() {
                 <Image
                   src={education}
                   className='rounded-lg object-cover'
-                  width={'100%'}
-                  height={'100%'}
+                  style={{
+                    width: '384px !important',
+                    height: '192px !important',
+                  }}
                   layout='responsive'
                   alt='Education Hub'
                 />
@@ -426,7 +435,7 @@ export default function Home() {
                   </div>
                   <div className='mt-auto self-end'>
                     <a
-                      href='https://tabsform.netlify.app'
+                      href='https://github.com/theali29/responsive_web'
                       className='items-center flex p-1 w-fit font-bold text-amber-950'
                     >
                       <svg

@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         burtons: 'burtons',
       },
+      fontFamily: {
+        satoshi: ['Satoshi-Variable', 'sans-serif'],
+      },
 
       screens: {
         xxs: '430px', // Customize your screen size breakpoint
