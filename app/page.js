@@ -25,8 +25,8 @@ import education from '../public/education1.png'
 import login from '../public/loginpage.png'
 // import web6 from '../public/web6.png'
 
-import DarkModeToggle from '../components/DarkModeToggle.js'
-// import { useState } from 'react'
+//import DarkModeToggle from '../components/DarkModeToggle.js'
+//import { useState } from 'react'
 export default function Home() {
   // const [darkMode, setDarkMode] = useState(false)
 
@@ -75,7 +75,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className='flex items-center'>
+            <div className='flex lg:flex-row flex-col lg:mt-0 mt-2 items-center'>
               <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
                 <Image
                   src={deved}
