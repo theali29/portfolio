@@ -75,7 +75,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className='flex lg:flex-row flex-col lg:mt-0 mt-2 items-center'>
+            <div className='flex lg:flex-row flex-col mt-4 items-center'>
               <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
                 <Image
                   src={deved}
