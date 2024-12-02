@@ -38,7 +38,7 @@ export default function Home() {
     <div>
       <div class='min-w-screen max-w-full overflow-x-hidden'>
         <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 w-screen overflow-x-hidden max-w-[1440px] mx-auto '>
-          <section id='home' className=' min-h-screen'>
+          <section id='navbar' className=''>
             <nav className='py-6 mb-8 flex justify-between items-center'>
               <h1 className='xxs:text-xs text-[8px] text-xs sm:text-base lg:text-xl playfair_display underline'>
                 Mohammad Ali
@@ -75,60 +75,64 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            <div className='flex lg:flex-row flex-col mt-4 items-center'>
-              <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
-                <Image
-                  src={deved}
-                  layout='fill'
-                  objectFit='cover'
-                  alt='Profile Picture'
-                />
+          </section>
+          <section className='min-h-screen items-center flex -mt-20 px-0 lg:pt-0 pt-24 xlg:pt-24  pb-20 relative w-full md:w-full'>
+            <div className='mx-auto max-w-7xl lg:px-6 w-full'>
+              <div className='flex lg:flex-row flex-col mt-4 items-center'>
+                <div className='relative mx-auto w-40 h-40 overflow-hidden rounded-full bg-gradient-to-b'>
+                  <Image
+                    src={deved}
+                    layout='fill'
+                    objectFit='cover'
+                    alt='Profile Picture'
+                  />
+                </div>
+                <div className='text-center p-10'>
+                  <h2 className='text-4xl text-amber-950 py-2  md:text-5xl max-w-lg mx-auto font-satoshi font-bold'>
+                    Mohammad Ali
+                  </h2>
+                  <h3 className='text-2xl py-2 md:text-3xl'>
+                    Full Stack Developer and Designer
+                  </h3>
+                  <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+                    Hello! I am a passionate and driven full-stack developer
+                    ready to bring innovative solutions to your startup or
+                    business. With a solid foundation in both web and mobile
+                    development, I am committed to delivering high-quality,
+                    tailored solutions that meet your unique needs.
+                  </p>
+                </div>
               </div>
-              <div className='text-center p-10'>
-                <h2 className='text-4xl text-amber-950 py-2  md:text-5xl max-w-lg mx-auto font-satoshi font-bold'>
-                  Mohammad Ali
-                </h2>
-                <h3 className='text-2xl py-2 md:text-3xl'>
-                  Full Stack Developer and Designer
-                </h3>
-                <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
-                  Hello! I am a passionate and driven full-stack developer ready
-                  to bring innovative solutions to your startup or business.
-                  With a solid foundation in both web and mobile development, I
-                  am committed to delivering high-quality, tailored solutions
-                  that meet your unique needs.
-                </p>
+              <div className='text-5xl flex justify-center gap-10 py-3 text-gray-800 md:gap-20 mb-8'>
+                <a
+                  href='https://twitter.com/aliisjustfine'
+                  target='blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillTwitterCircle />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/mohammadali08/'
+                  target='blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillLinkedin />
+                </a>
+                <a
+                  href='https://youtube.com'
+                  target='blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillYoutube />
+                </a>
+                <a
+                  href='https://github.com/theali29'
+                  target='blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillGithub />
+                </a>
               </div>
-            </div>
-            <div className='text-5xl flex justify-center gap-10 py-3 text-gray-800 md:gap-20 mb-8'>
-              <a
-                href='https://twitter.com/aliisjustfine'
-                target='blank'
-                rel='noopener noreferrer'
-              >
-                <AiFillTwitterCircle />
-              </a>
-              <a
-                href='https://www.linkedin.com/in/mohammadali08/'
-                target='blank'
-                rel='noopener noreferrer'
-              >
-                <AiFillLinkedin />
-              </a>
-              <a
-                href='https://youtube.com'
-                target='blank'
-                rel='noopener noreferrer'
-              >
-                <AiFillYoutube />
-              </a>
-              <a
-                href='https://github.com/theali29'
-                target='blank'
-                rel='noopener noreferrer'
-              >
-                <AiFillGithub />
-              </a>
             </div>
           </section>
           <section id='services'>

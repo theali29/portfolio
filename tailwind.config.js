@@ -17,6 +17,7 @@ module.exports = {
 
       screens: {
         xxs: '430px', // Customize your screen size breakpoint
+        xlg: '1280px',
       },
     },
   },
